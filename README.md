@@ -10,7 +10,9 @@ distribution of any GMM, then it can be proven that Diffusion Models can learn a
 For this example, I have used a 1-Dimensional feature for visual verification, and a very simple MLP with 4
 fully connected layers with GELU activation at each layer to learn the following distribution : 
 
-X ~ 0.3N(-5, 1) + 0.5N(1, 2) + 0.2N(3, 1)
+X ~ 0.2 N(-2, 0.8) + 0.5 N(1, 0.3) + 0.3 N(5, 0.5)
+
+Wher N(m, S) represents a Gaussian Distribution with mean = m, Standard Deviation = S
 
 I used 1000 data points sampled from the above distribution.
 
